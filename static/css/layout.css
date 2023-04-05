@@ -1,0 +1,9 @@
+:root {
+  --success: #288855;
+  --light: #fff;
+  --box-shadow: 0px 0px 3px 0px;
+}
+
+li {
+  list-style: none;
+}

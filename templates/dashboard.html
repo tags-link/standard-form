@@ -1,0 +1,61 @@
+{% extends 'layout.html' %}
+
+<!-- block begining -->
+{% block content %}
+<div>
+  {% for message in massages %}
+  <!-- forloop -->
+  {% if message %}
+  <div class="alert alert-success mx-auto col-10 col-md-5">{{message}}</div>
+  {% endif %}
+  <!-- end for loop -->
+  {% endfor %}
+  <div class="d-flex justify-content-between mx-4">
+    <h3>Personal Details</h3>
+    <a href="{% url 'account:update_profile' request.user.profile.id %}"
+      >Edit</a
+    >
+  </div>
+  <div class="d-flex flex-md-row flex-column-reverse">
+    <div
+      class="card card-body border-danger mx-auto mx-md-4 mt-2 col-10 col-md-9"
+    >
+      <div>
+        <span>surname</span>
+        <h4>{{request.user.last_name}}</h4>
+      </div>
+      <br />
+      {% if request.user.is_staff %} this user is a staff {% else %} this user
+      is not a staff {% endif %}
+      <br />
+      <br />
+      <div>
+        <span>Other Names</span>
+        <h4>{{request.user.profile.other_names}}</h4>
+      </div>
+    </div>
+    <div
+      class="card card-body text-center mt-2 mx-auto mx-md-4 border-danger col-10 col-md-3"
+    >
+      <img
+        class="rounded-circle mx-auto"
+        height="100"
+        width="100"
+        src=""
+        alt=""
+      />
+      <h3>{{request.user.first_name}} {{request.user.last_name}}</h3>
+      <p class="text-secondary">
+        <strong> {{request.user.email}} <br /> </strong>
+      </p>
+
+      <strong>NPWR/2020/003511353</strong> <br />
+      <p><strong>N-TECH-NPR</strong></p>
+      <h5>
+        <span class="badge rounded-pill bg-success">shortlisted</span>
+      </h5>
+      <strong>N-Power Batch</strong>
+    </div>
+  </div>
+  {% endblock %}
+</div>

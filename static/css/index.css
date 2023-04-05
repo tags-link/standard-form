@@ -1,0 +1,73 @@
+.hero {
+  height: 100vh;
+  margin-top: 100px;
+  background: url(../images/hero-image2.webp) no-repeat rgba(0, 0, 0, 0.4);
+  background-blend-mode: darken;
+}
+.hero3 {
+  text-align: center;
+}
+.hero-footer {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+#ReadMore {
+  width: 8.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--success);
+  color: var(--light);
+}
+.card-text {
+  background-color: white;
+  margin-top: -15px;
+  padding: 15px;
+  box-shadow: 0px 2px 5px 0px;
+  border-radius: 0px 0px 5px 5px;
+}
+@media screen and (max-width: 580px) {
+  .hero {
+    width: 100%;
+    margin-top: 75px;
+    text-align: center;
+  }
+  .hero-adverts > h3 {
+    text-decoration: underline;
+  }
+  #logo {
+    margin: auto;
+    width: 150px;
+    height: 150px;
+  }
+  #logo2,
+  #logo3 {
+    margin: auto;
+    width: 70%;
+    margin-top: 50px;
+  }
+  .logo-brand {
+    display: flex;
+    width: 100%;
+  }
+  .hero2 {
+    text-align: center;
+  }
+  .hero2 > div {
+    margin-top: 4rem;
+  }
+  .hero4 {
+    display: block;
+  }
+  .card-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    height: 15rem;
+  }
+  .card-text {
+  }
+}

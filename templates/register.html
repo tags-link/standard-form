@@ -1,0 +1,16 @@
+{% extends 'layout.html'%}
+<!-- template inheritance -->
+{% load static %}
+<!-- crispy -->
+{% load crispy_forms_tags%}
+
+<!-- body -->
+{% block content %}
+<form method="post" class="col-10 col-md-6 mx-auto" style="margin-top: 8rem">
+  {% csrf_token %}
+  <h3 class="border-bottom pb-2">REGISTER TO APPLY</h3>
+  {{form|crispy}}
+  <!-- submit button -->
+  <button type="submit" class="btn btn-success w-100 mb-4">REGISTER</button>
+</form>
+{% endblock %}

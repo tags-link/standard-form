@@ -1,0 +1,67 @@
+{% load static %}
+
+<nav
+  class="py-4 px-2 navbar border-bottom bg-light navbar-expand-lg navbar-light"
+>
+  <a href="" class="navbar-brand d-block d-md-none">LOGO</a>
+  <h5 class="d-none d-md-block">
+    Federal Ministry Of Humanitarian Affairs, Disaster <br />
+    Management and Social Development
+  </h5>
+  <button
+    class="navbar-toggler"
+    data-bs-toggle="collapse"
+    data-bs-target="#navCollapse"
+    aria-controls="navCollapse"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navCollapse">
+    <ul
+      class="d-flex navbar-nav align-items-center justify-content-center ms-auto"
+    >
+      <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="">News</a></li>
+      <li class="nav-item"><a class="nav-link" href="">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+      <li class="nav-item">
+        <a
+          class="btn btn-success py-3"
+          href="{% url 'account:login' %}"
+          style="width: 14rem"
+          >Login</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- header code -->
+<!-- <header>
+  <div class="header">
+    <div class="brand">
+      <h4>
+        Federal Ministry Of Humanitarian Affairs, Disaster <br />
+        Management and Social Development
+      </h4>
+    </div>
+    <div class="dropdown-toggler-icon">
+      <button class="bi bi-justify"></button>
+    </div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="list-item"><a href="/">Home</a></li>
+        <li class="list-item"><a href="/news">News</a></li>
+        <li class="list-item"><a href="/about">About</a></li>
+        <li class="list-item"><a href="/contact">Contact</a></li>
+        <li class="list-item"><a href="/register">Register</a></li>
+        <li class="list-item">
+          <a href="/login" class="nav-link"
+            ><button class="login-button" type="button">login</button></a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header> -->
